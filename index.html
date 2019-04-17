@@ -1,6 +1,31 @@
-<div>
-    <p align="center">
-        <font size="72" face="sans-serif">ZIP HUB WEBSITE</font><br /><img align="middle" src="ziphub.svg"
-            alt="Zip hub BEST SOURCE CONTROL" width="75%" height="75%">
-    </p>
-</div>
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div>
+        <p align="center">
+            <font size="72" face="sans-serif">ZIP HUB WEBSITE</font><br /><img align="middle" src="ziphub.svg"
+                alt="Zip hub BEST SOURCE CONTROL" width="75%" height="75%">
+        </p>
+    </div>
+    <script>
+        function loop() {
+            var i, n, s = '';
+
+            for (i = 0; i < 50; i++) {
+                n = Math.floor(Math.sin((Date.now() / 200) + (i / 2)) * 4) + 4;
+
+                s += String.fromCharCode(0x2581 + n);
+            }
+
+            window.location.hash = s;
+
+            setTimeout(loop, 50);
+        }
+
+        window.addEventListener('load', loop);
+    </script>
+
+</body>
+
+</html>
