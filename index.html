@@ -1,23 +1,90 @@
-<div>
-    <p align="center">
-        <font size="72" face="sans-serif">ZIP HUB WEBSITE</font><br /><img align="middle" src="ziphub.svg"
-            alt="Zip hub BEST SOURCE CONTROL" width="75%" height="75%">
-    </p>
-</div>
-<script>
-    function loop() {
-        var i, n, s = '';
+<!-- <!DOCTYPE html> -->
+<html>
 
-        for (i = 0; i < 50; i++) {
-            n = Math.floor(Math.sin((Date.now() / 200) + (i / 2)) * 4) + 4;
+<head>
+    <meta charset='utf-8'>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+        @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:500);
 
-            s += String.fromCharCode(0x2581 + n);
+        html, body {
+            width: 100%;
+            height: 100%;
+            display: flex;
         }
 
-        window.location.hash = s;
+        * {
+        margin: 0;
+        padding: 0;
+        }
 
-        setTimeout(loop, 50);
-    }
+        .parent {
+        margin: auto;
+        display: flex;
+        height: 80%;
+        width: 80%;
+        }
 
-    window.addEventListener('load', loop);
-</script>
+        .child {
+        margin: auto;  /* Magic! */
+        max-width: 100%;
+        max-height: 100%;
+        }
+
+        body {
+            font-family: 'Open Sans';
+            color: rgb(51, 51, 51);
+        }
+
+        img:hover {
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(51, 51, 51);
+            font-size: 16px;
+            text-align: right;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 72;
+        }
+
+        img {
+            align-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+            <h1 class="child" >ZIP HUB WEBSITE</h1>
+            <img class="child" src="ziphub.svg"
+                alt="Zip hub BEST SOURCE CONTROL" width="75%" height="75%"></input>
+            </div>
+            <a href="https://github.com/ziphub-website/ziphub.website">
+                made with 😠 on github
+            </a>
+    <script>
+        // function loop() {
+        //     var i, n, s = '';
+
+        //     for (i = 0; i < 50; i++) {
+        //         n = Math.floor(Math.sin((Date.now() / 200) + (i / 2)) * 4) + 4;
+
+        //         s += String.fromCharCode(0x2581 + n);
+        //     }
+
+        //     window.location.hash = s;
+
+        //     setTimeout(loop, 50);
+        // }
+
+        // window.addEventListener('load', loop);
+    </script>
+</body>
+
+</html>
